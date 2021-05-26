@@ -1,8 +1,7 @@
-Attribute VB_Name = "Module2"
 Function SUMA_MACIERZY(A As Range, B As Range)
 ' Sumuje elementy macierzy o zgodnych wymiarach
 If A.Rows.Count <> B.Rows.Count Or A.Columns.Count <> B.Columns.Count Then
-    SumaMacierzy = "Konflikt wymiarów!"
+    SUMA_MACIERZY = "Konflikt wymiarów!"
     Exit Function
 End If
 
@@ -23,7 +22,7 @@ End Function
 Function MNOZENIE_MACIERZY(A As Range, B As Range)
 ' Mno¿y elementy macierzy o zgodnych wymiarach
 If A.Columns.Count <> B.Rows.Count Then
-    MnozenieMacierzy = "Konflikt wymiarów! Liczba kolumn A jest ró¿na od liczby wierszy B"
+    MNOZENIE_MACIERZY = "Konflikt wymiarów! Liczba kolumn A jest ró¿na od liczby wierszy B"
     Exit Function
 End If
 
